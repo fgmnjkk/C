@@ -19,7 +19,7 @@ db = client['Anurag']
 users_collection = db['VAMPIREXCHEATS']
 redeem_codes_collection = db['redeem_codes0']
 
-TELEGRAM_BOT_TOKEN = '7753078487:AAEOhMK4-gujQ_8GZO8X5Y4AJtZ7Q5kPdqI'
+TELEGRAM_BOT_TOKEN = '7905583516:AAEoccZfLiUOUVOIvQCjywiWQZJ2umiGX38'
 ADMIN_USER_ID = 6290531180 
 
 cooldown_dict = {}
@@ -148,7 +148,7 @@ async def attack(update: Update, context: CallbackContext):
     await context.bot.send_message(
         chat_id=chat_id,
         text=(
-            f"*😧 MANU🥵SEVER FREEZ!❗ 💀*\n"
+            f"*😧 ANURAG 🥵SEVER FREEZ!❗ 💀*\n"
         f"💦chodna shuru*!* 💦\n\n"
         f"*🤯 flat room: {ip}:{port}*\n"
         f"*🤣 kitne der: {duration} seconds*\n"
@@ -158,7 +158,7 @@ async def attack(update: Update, context: CallbackContext):
     # Run attack asynchronously
     asyncio.create_task(run_attack(chat_id, ip, port, duration, context))
     
-async def LDX_COBRA(update: Update, context: CallbackContext):
+async def Mr_manu_kumar(update: Update, context: CallbackContext):
     user_id = update.effective_user.id 
     message = f"YOUR USER ID: `{user_id}`" 
     await context.bot.send_message(chat_id=update.effective_chat.id, text=message, parse_mode='Markdown')
@@ -316,7 +316,7 @@ def main():
     application.add_handler(CommandHandler("attack", attack))
     application.add_handler(CommandHandler("gen", generate_redeem_code))
     application.add_handler(CommandHandler("redeem", redeem_code))
-    application.add_handler(CommandHandler("get_id", LDX_COBRA))
+    application.add_handler(CommandHandler("get_id", Mr_manu_kumar))
     application.add_handler(CommandHandler("users", list_users))
     application.add_handler(CommandHandler("help", help_command))
     
