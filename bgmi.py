@@ -19,7 +19,7 @@ db = client['Anurag']
 users_collection = db['VAMPIREXCHEATS']
 redeem_codes_collection = db['redeem_codes0']
 
-TELEGRAM_BOT_TOKEN = '7905583516:AAEoccZfLiUOUVOIvQCjywiWQZJ2umiGX38'
+TELEGRAM_BOT_TOKEN = '7905583516:AAFpatV4UAAV2MONBieROxIm_mkZT7i6OZU'
 ADMIN_USER_ID = 6290531180 
 
 cooldown_dict = {}
